@@ -1,0 +1,169 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #78d200;
+  color: #00963c;
+  margin: 0;
+}
+
+.container-logo {
+  height: 30%;
+  padding-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  width: 20%;
+}
+
+.container {
+  width: 50%;
+  background-color: #ffffff;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+.question {
+  display: none;
+  flex-direction: column;
+  animation: fadeIn 0.5s;
+}
+
+.question.active {
+  display: flex;
+}
+
+.invalid {
+  border: 2px solid red;
+}
+
+span {
+  color: #78d200;
+  font-size: small;
+}
+
+label {
+  margin-bottom: 10px;
+  color: #00963c;
+}
+
+input, textarea, select {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+input:focus, textarea:focus, select:focus {
+  outline: none;
+  border-color: #00963c;
+}
+
+textarea {
+  resize: vertical;
+}
+
+#otherq21 {
+  width: 80%;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #78d200;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:disabled {
+  background-color: #3c3c3c;
+}
+
+button:hover:not(:disabled) {
+  background-color: #00963c;
+}
+
+button:disabled:hover {
+  cursor: not-allowed;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+  .container {
+    width: 70%;
+    padding: 15px;
+  }
+
+  .logo {
+    width: 30%;
+  }
+
+  label {
+    margin-bottom: 5px;
+  }
+
+  input, textarea, select {
+    padding: 8px;
+    margin-bottom: 8px;
+  }
+
+  button {
+    padding: 8px 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    padding: 20px;
+  }
+
+  .container {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .logo {
+    width: 40%;
+  }
+
+  label {
+    margin-bottom: 5px;
+  }
+
+  input, textarea, select {
+    padding: 6px;
+    margin-bottom: 6px;
+  }
+
+  button {
+    padding: 6px 12px;
+    width: 100%;
+    margin-top: 10px;
+  }
+}
