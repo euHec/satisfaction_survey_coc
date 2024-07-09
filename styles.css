@@ -50,6 +50,26 @@ body {
   border: 2px solid red;
 }
 
+.label-checkbox {
+  font-size: 12px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  color: #00963c;
+}
+
+.label-checkbox > input {
+  padding: 0px;
+  margin-bottom: 0px;
+  color: #00963c;
+}
+
+.column {
+  padding: 5px;
+  display: inline-block;
+  box-sizing: border-box;
+  width: 90%;
+}
+
 p {
   margin: 5px;
   text-align: justify;

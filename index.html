@@ -45,24 +45,24 @@
             <!-- Qual o ano escolar do seu(sua) filho(a)? -->
             <div class="question" data-question="2" style="display: none;">
               <h1>Dados Demográficos</h1>
-                <label for="q4">Qual o ano escolar do seu(sua) filho(a)? *</label>
-                <select id="q4" name="q4" required>
-                  <option value=""></option>
-                  <option value="G3">Infantil 3</option>
-                  <option value="G4">Infantil 4</option>
-                  <option value="G5">Infantil 5</option>
-                  <option value="1Ano">1º Ano do Ensino Fundamental</option>
-                  <option value="2Ano">2º Ano do Ensino Fundamental</option>
-                  <option value="3Ano">3º Ano do Ensino Fundamental</option>
-                  <option value="4Ano">4º Ano do Ensino Fundamental</option>
-                  <option value="5Ano">5º Ano do Ensino Fundamental</option>
-                  <option value="6Ano">6º Ano do Ensino Fundamental</option>
-                  <option value="7Ano">7º Ano do Ensino Fundamental</option>
-                  <option value="8Ano">8º Ano do Ensino Fundamental</option>
-                  <option value="9Ano">9º Ano do Ensino Fundamental</option>
-                  <option value="1AnoMedio">1º Ano do Ensino Médio</option>
-                  <option value="2AnoMedio">2º Ano do Ensino Médio</option>
-                </select>
+                <label>Qual o ano escolar do seu(sua) filho(a)? *</label>
+                <div class="column">
+                  <label class="label-checkbox"><input type="checkbox" name="q4[]" value="G3"> Infantil 3</label><br>
+                  <label class="label-checkbox"><input type="checkbox" name="q4[]" value="G4"> Infantil 4</label><br>
+                  <label class="label-checkbox"><input type="checkbox" name="q4[]" value="G5"> Infantil 5</label><br>
+                  <label class="label-checkbox"><input type="checkbox" name="q4[]" value="1Ano"> 1º Ano do Ensino Fundamental</label><br>
+                  <label class="label-checkbox"><input type="checkbox" name="q4[]" value="2Ano"> 2º Ano do Ensino Fundamental</label><br>
+                  <label class="label-checkbox"><input type="checkbox" name="q4[]" value="3Ano"> 3º Ano do Ensino Fundamental</label><br>
+                  <label class="label-checkbox"><input type="checkbox" name="q4[]" value="4Ano"> 4º Ano do Ensino Fundamental</label><br>
+                  <label class="label-checkbox"><input type="checkbox" name="q4[]" value="5Ano"> 5º Ano do Ensino Fundamental</label><br>
+                  <label class="label-checkbox"><input type="checkbox" name="q4[]" value="6Ano"> 6º Ano do Ensino Fundamental</label><br>
+                  <label class="label-checkbox"><input type="checkbox" name="q4[]" value="7Ano"> 7º Ano do Ensino Fundamental</label><br>
+                  <label class="label-checkbox"><input type="checkbox" name="q4[]" value="8Ano"> 8º Ano do Ensino Fundamental</label><br>
+                  <label class="label-checkbox"><input type="checkbox" name="q4[]" value="9Ano"> 9º Ano do Ensino Fundamental</label><br>
+                  <label class="label-checkbox"><input type="checkbox" name="q4[]" value="1AnoMedio"> 1º Ano do Ensino Médio</label><br>
+                  <label class="label-checkbox"><input type="checkbox" name="q4[]" value="2AnoMedio"> 2º Ano do Ensino Médio</label>
+                </div>
+              
                 <div>
                   <button type="button" onclick="previusQuestion()">Anterior</button>
                   <button type="button" onclick="nextQuestion()">Próximo</button>

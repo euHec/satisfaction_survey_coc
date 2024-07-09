@@ -5,6 +5,29 @@ form.addEventListener('submit', async e => {
   e.preventDefault();
   const formData = new FormData(form);
 
+  let answers = {};
+
+  // Collecting checkbox values
+  const checkboxes = document.querySelectorAll('input[name="q4[]"]:checked');
+  let checkboxValues = [];
+
+  checkboxes.forEach((checkbox) => {
+    checkboxValues.push(checkbox.value);
+  });
+
+  formData.append('q4', checkboxValues.join(', '));
+
+  formData.forEach((value, key) => {
+    if (!answers[key]) {
+      answers[key] = value;
+    } else {
+      if (!Array.isArray(answers[key])) {
+        answers[key] = [answers[key]];
+      }
+      answers[key].push(value);
+    }
+  });
+
   try {
     const response = await fetch(scriptURL, { method: 'POST', body: formData })
     console.log(await response.json());
