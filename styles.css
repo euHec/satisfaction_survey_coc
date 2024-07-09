@@ -56,6 +56,8 @@ span {
 }
 
 label {
+  font-size: 20px;
+  margin-top: 10px;
   margin-bottom: 10px;
   color: #00963c;
 }
@@ -76,7 +78,7 @@ textarea {
   resize: vertical;
 }
 
-#otherq21 {
+#otherq23 {
   width: 80%;
 }
 

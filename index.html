@@ -56,7 +56,7 @@
 
             <!-- Como você avalia a qualidade do ensino fornecido pelos professores? -->
             <div class="question" data-question="3" style="display: none;">
-              <h1>Avaliação dos Segmentos</h1>
+              <h1>Avaliação de Segmentos</h1>
                 <label for="q5">Como você avalia a qualidade do ensino fornecido pelos professores? *</label>
                 <select id="q5" name="q5" required>
                   <option value=""></option>
@@ -73,7 +73,7 @@
 
             <!-- Como você avalia o atendimento na secretaria? -->
             <div class="question" data-question="4" style="display: none;">
-              <h1>Avaliação dos Segmentos</h1>
+              <h1>Avaliação de Segmentos</h1>
                 <label for="q6">Como você avalia o atendimento na secretaria? *</label>
                 <select id="q6" name="q6" required>
                   <option value=""></option>
@@ -90,7 +90,7 @@
 
             <!-- Como você avalia a coordenação pedagógica? -->
             <div class="question" data-question="5" style="display: none;">
-              <h1>Avaliação dos Segmentos</h1>
+              <h1>Avaliação de Segmentos</h1>
                 <label for="q7">Como você avalia a coordenação pedagógica? *</label>
                 <select id="q7" name="q7" required>
                   <option value=""></option>
@@ -107,7 +107,7 @@
 
             <!-- Como você avalia o setor financeiro? -->
             <div class="question" data-question="6" style="display: none;">
-              <h1>Avaliação dos Segmentos</h1>
+              <h1>Avaliação de Segmentos</h1>
                 <label for="q8">Como você avalia o setor financeiro? *</label>
                 <select id="q8" name="q8" required>
                   <option value=""></option>
@@ -124,8 +124,8 @@
 
             <!-- Como você avalia os momentos devocionais realizados pela escola? -->
             <div class="question" data-question="7" style="display: none;">
-              <h1>Avaliação dos Segmentos</h1>
-                <label for="q9">Como você avalia os momentos devocionais realizados pela escola? *</label>
+              <h1>Avaliação de Segmentos</h1>
+                <label for="q9">Como você avalia os momentos de devocionais realizados pela escola? *</label>
                 <select id="q9" name="q9" required>
                   <option value=""></option>
                   <option value="Excelente">Excelente</option>
@@ -139,27 +139,28 @@
                 </div>
             </div>
 
-            <!-- </div>Como você avalia o espaço físico da escola? -->
+            <!-- *Como você avalia o OPEN (Orientação Psicopedagógica Emocial e Normativa)? -->
             <div class="question" data-question="8" style="display: none;">
-              <h1>Infraestrutura e Serviços</h1>
-                <label for="q10">Como você avalia o espaço físico da escola? *</label>
-                <select id="q10" name="q10" required>
-                  <option value=""></option>
-                  <option value="Excelente">Excelente</option>
-                  <option value="Bom">Bom</option>
-                  <option value="Regular">Regular</option>
-                  <option value="Ruim">Ruim</option>
-                </select>
-                <div>
-                  <button type="button" onclick="previusQuestion()">Anterior</button>
-                  <button type="button" onclick="nextQuestion()">Próximo</button>
-                </div>
+              <h1>Avaliação de Segmentos</h1>
+              <label for="q10">Como você avalia o OPEN (Orientação Psicopedagógica Emocial e Normativa)? *</label>
+              <select id="q10" name="q10" required>
+                <option value=""></option>
+                <option value="Excelente">Não se aplica</option>
+                <option value="Excelente">Excelente</option>
+                <option value="Bom">Bom</option>
+                <option value="Regular">Regular</option>
+                <option value="Ruim">Ruim</option>
+              </select>
+              <div>
+                <button type="button" onclick="previusQuestion()">Anterior</button>
+                <button type="button" onclick="nextQuestion()">Próximo</button>
+              </div>
             </div>
 
-            <!-- Como você avalia a cantina da escola? -->
+            <!-- </div>Como você avalia o espaço físico da escola? -->
             <div class="question" data-question="9" style="display: none;">
               <h1>Infraestrutura e Serviços</h1>
-                <label for="q11">Como você avalia a cantina da escola? *</label>
+                <label for="q11">Como você avalia o espaço físico da escola? *</label>
                 <select id="q11" name="q11" required>
                   <option value=""></option>
                   <option value="Excelente">Excelente</option>
@@ -173,10 +174,10 @@
                 </div>
             </div>
 
-            <!-- Como você avalia a segurança e a eficiência da portaria? -->
+            <!-- Como você avalia a cantina da escola? -->
             <div class="question" data-question="10" style="display: none;">
               <h1>Infraestrutura e Serviços</h1>
-                <label for="q12">Como você avalia a segurança e a eficiência da portaria? *</label>
+                <label for="q12">Como você avalia a cantina da escola? *</label>
                 <select id="q12" name="q12" required>
                   <option value=""></option>
                   <option value="Excelente">Excelente</option>
@@ -190,11 +191,28 @@
                 </div>
             </div>
 
-            <!-- Como você avalia a limpeza das instalações da escola? -->
+            <!-- Como você avalia a segurança e a eficiência da portaria? -->
             <div class="question" data-question="11" style="display: none;">
               <h1>Infraestrutura e Serviços</h1>
-                <label for="q13">Como você avalia a limpeza das instalações da escola? *</label>
+                <label for="q13">Como você avalia a segurança e a eficiência da portaria? *</label>
                 <select id="q13" name="q13" required>
+                  <option value=""></option>
+                  <option value="Excelente">Excelente</option>
+                  <option value="Bom">Bom</option>
+                  <option value="Regular">Regular</option>
+                  <option value="Ruim">Ruim</option>
+                </select>
+                <div>
+                  <button type="button" onclick="previusQuestion()">Anterior</button>
+                  <button type="button" onclick="nextQuestion()">Próximo</button>
+                </div>
+            </div>
+
+            <!-- Como você avalia a limpeza das instalações da escola? -->
+            <div class="question" data-question="12" style="display: none;">
+              <h1>Infraestrutura e Serviços</h1>
+                <label for="q14">Como você avalia a limpeza das instalações da escola? *</label>
+                <select id="q14" name="q14" required>
                   <option value=""></option>
                   <option value="Excelente">Excelente</option>
                   <option value="Bom">Bom</option>
@@ -209,17 +227,17 @@
 
             <!-- Você segue a escola nas redes sociais? -->
             <!-- Se sim, você gosta dos conteúdos postados? -->
-            <div class="question" data-question="12" style="display: none;">
-              <h1>Comunicação e Mídias Sociais</h1>
-                <label for="q14">Você segue a escola nas redes sociais? *</label>
-                <select id="q14" name="q14" onchange="showOrhide(event)" required>
+            <div class="question" data-question="13" style="display: none;">
+              <h1>Mídias Sociais</h1>
+                <label for="q15">Você segue a escola nas redes sociais? *</label>
+                <select id="q15" name="q15" onchange="showOrhide(event)" required>
                   <option value=""></option>
                   <option value="Sim">Sim</option>
                   <option value="Não">Não</option>
                 </select>
-                <div div class="question" style="display: none;" id="section12" required>
-                  <label for="q15">Se sim, você gosta dos conteúdos postados?</label>
-                  <select id="q15" name="q15">
+                <div class="question" style="display: none;" id="section13" required>
+                  <label for="q16">Se sim, você gosta dos conteúdos postados?</label>
+                  <select id="q16" name="q16">
                     <option value=""></option>
                     <option value="Sim">Sim</option>
                     <option value="Não">Não</option>
@@ -232,94 +250,84 @@
                 </div>
             </div>
 
+            <!-- Como você avalia a comunicação entre a escola e os responsáveis? -->
+            <div class="question" data-question="14" style="display: none;">
+              <h1>Comunicação</h1>
+              <label for="q17">Como você avalia a comunicação entre a escola e os responsáveis? *</label>
+              <select id="q17" name="q17" required>
+                <option value=""></option>
+                <option value="Excelente">Excelente</option>
+                <option value="Bom">Bom</option>
+                <option value="Regular">Regular</option>
+                <option value="Ruim">Ruim</option>
+              </select>
+              <div>
+                <button type="button" onclick="previusQuestion()">Anterior</button>
+                <button type="button" onclick="nextQuestion()">Próximo</button>
+              </div>
+            </div>
+            
+            <!-- Como você avalia os eventos e festas organizados pela escola? -->
+            <div class="question" data-question="15" style="display: none;">
+              <h1>Eventos</h1>
+              <label for="q18">Como você avalia os eventos e festas organizados pela escola? *</label>
+              <select id="q18" name="q18" required>
+                <option value=""></option>
+                <option value="Excelente">Excelente</option>
+                <option value="Bom">Bom</option>
+                <option value="Regular">Regular</option>
+                <option value="Ruim">Ruim</option>
+              </select>
+              <div>
+                <button type="button" onclick="previusQuestion()">Anterior</button>
+                <button type="button" onclick="nextQuestion()">Próximo</button>
+              </div>
+            </div>
+
             <!-- Você tem interesse em que seu filho(a) participe de atividades esportivas no turno oposto? -->
             <!-- Se sim, qual atividade você prefere? (Marque todas as que se aplicam) -->
-            <div class="question" data-question="13" style="display: none;">
-              <h1>Atividades Extracurriculares</h1>
-                <label for="q16">Você tem interesse em que seu filho(a) participe de atividades esportivas no turno oposto? *</label>
-                <select id="q16" name="q16" onchange="showOrhide(event)" required>
-                  <option value=""></option>
-                  <option value="Sim">Sim</option>
-                  <option value="Não">Não</option>
-                </select>
-                <div class="question" style="display: none;" id="section13">
-                  <label>Se sim, qual atividade você prefere? (Marque todas as que se aplicam) *</label>
-                  <label for="q17"><input name="q17" value="Futebol" type="checkbox"> Futebol</label>
-                  <label for="q18"><input name="q18" value="Jiu-Jitsu" type="checkbox"></input> Jiu-Jitsu</label>
-                  <label for="q19"><input name="q19" value="Balé" type="checkbox"></input> Balé</label>
-                  
-                  <label for="q20">
-                    <input name="q20" value="Outros" type="checkbox" id="q21" onclick="othersOptions(event)">Outros
-                    <input type="text" name="q21" id="otherq21"  style="display: none;">
-                  </label>
-                </div>
-
-                <div>
-                  <button type="button" onclick="previusQuestion()">Anterior</button>
-                  <button type="button" onclick="nextQuestion()">Próximo</button>
-                </div>
-            </div>
-
-            <!-- Como você avalia os eventos e festas organizados pela escola? -->
-            <div class="question" data-question="14" style="display: none;">
-              <h1>Eventos</h1>
-                <label for="q22">Como você avalia os eventos e festas organizados pela escola? *</label>
-                <select id="q22" name="q22" required>
-                  <option value=""></option>
-                  <option value="Excelente">Excelente</option>
-                  <option value="Bom">Bom</option>
-                  <option value="Regular">Regular</option>
-                  <option value="Ruim">Ruim</option>
-                </select>
-                <div>
-                  <button type="button" onclick="previusQuestion()">Anterior</button>
-                  <button type="button" onclick="nextQuestion()">Próximo</button>
-                </div>
-            </div>
-
-            <!-- *Como você avalia o acompanhamento pedagógico individualizado (caso seu filho(a) precise)? -->
-            <div class="question" data-question="15" style="display: none;">
-              <h1>Outros</h1>
-                <label for="q23">Como você avalia o acompanhamento pedagógico individualizado (caso seu filho(a) precise)? *</label>
-                <select id="q23" name="q23" required>
-                  <option value=""></option>
-                  <option value="Excelente">Não se aplica</option>
-                  <option value="Excelente">Excelente</option>
-                  <option value="Bom">Bom</option>
-                  <option value="Regular">Regular</option>
-                  <option value="Ruim">Ruim</option>
-                </select>
-                <div>
-                  <button type="button" onclick="previusQuestion()">Anterior</button>
-                  <button type="button" onclick="nextQuestion()">Próximo</button>
-                </div>
-            </div>
-
-            <!-- Como você avalia a comunicação entre a escola e os pais? -->
             <div class="question" data-question="16" style="display: none;">
-              <h1>Outros</h1>
-                <label for="q24">Como você avalia a comunicação entre a escola e os pais? *</label>
-                <select id="q24" name="q24" required>
-                  <option value=""></option>
-                  <option value="Excelente">Excelente</option>
-                  <option value="Bom">Bom</option>
-                  <option value="Regular">Regular</option>
-                  <option value="Ruim">Ruim</option>
-                </select>
-                <div>
-                  <button type="button" onclick="previusQuestion()">Anterior</button>
-                  <button type="button" onclick="nextQuestion()">Próximo</button>
-                </div>
+              <h1>Atividades Extracurriculares</h1>
+              <label for="q19">Você tem interesse em que seu filho(a) participe de atividades esportivas no turno oposto? *</label>
+              <select id="q19" name="q19" onchange="showOrhide(event)" required>
+                <option value=""></option>
+                <option value="Sim">Sim</option>
+                <option value="Não">Não</option>
+              </select>
+              <div class="question" style="display: none;" id="section16">
+                <label>Se sim, qual atividade você prefere? (Marque todas as que se aplicam) *</label>
+                <label for="q20"><input name="q20" value="Futebol" type="checkbox"> Futebol</label>
+                <label for="q21"><input name="q21" value="Jiu-Jitsu" type="checkbox"></input> Jiu-Jitsu</label>
+                <label for="q22"><input name="q22" value="Balé" type="checkbox"></input> Balé</label>
+                
+                <label for="q23">
+                  <input name="q23" value="Outros" type="checkbox" id="q23" onclick="othersOptions(event)"> Outros
+                  <input type="text" name="q24" id="otherq23"  style="display: none;">
+                </label>
+              </div>
+
+              <div>
+                <button type="button" onclick="previusQuestion()">Anterior</button>
+                <button type="button" onclick="nextQuestion()">Próximo</button>
+              </div>
             </div>
 
             <!-- Você recomendaria a nossa escola para outros pais? -->
             <div class="question" data-question="17" style="display: none;">
-              <h1>Outros</h1>
-                <label for="q25">Você recomendaria a nossa escola para outros pais? *</label>
+              <h1>Deixe sua opnião</h1>
+                <label for="q25">Em uma escala de 0 à 10 o quanto você recomendaria a nossa escola para outros pais? *</label>
                 <select id="q25" name="q25" required>
                   <option value=""></option>
-                  <option value="Sim">Sim</option>
-                  <option value="Náo">Não</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+                  <option value="10">10</option>
                 </select>
                 <div>
                   <button type="button" onclick="previusQuestion()">Anterior</button>
@@ -327,40 +335,18 @@
                 </div>
             </div>
 
-            <!-- *O que você mais gosta na escola -->
+            <!-- Questão aberta -->
             <div class="question" data-question="18" style="display: none;">
-              <h1>Deixe sua opnião</h1>
-                <label for="q26">O que você mais gosta na escola?</label>
+              <h1>Deixe sua opnião <span>(Opcional)</span></h1>
+                <label for="q26">Sua opinião é muito importante para nós. Esse é o momento em que você pode compartilhar livremente seus pensamentos, sugestões, críticas e tudo o que achar relevante. Queremos ouvir o que você tem a dizer para que possamos melhorar continuamente. Por favor, sinta-se à vontade para falar sobre qualquer aspecto que considere importante.</label>
                 <textarea type="text" name="q26" id="q26" placeholder="Digite sua mensagem"></textarea>
                 <div>
                   <button type="button" onclick="previusQuestion()">Anterior</button>
-                  <button type="button" onclick="nextQuestion()">Próximo</button>
+                  <button type="submit" onclick="nextQuestion()">Enviar</button>
                 </div>
             </div>
 
-            <!-- O que você acha que pode ser melhorado na escola? -->
             <div class="question" data-question="19" style="display: none;">
-              <h1>Deixe sua opnião</h1>
-                <label for="q27">O que você acha que pode ser melhorado na escola?</label>
-                <textarea type="text" name="q27" id="q27" placeholder="Digite sua mensagem"></textarea>
-                <div>
-                  <button type="button" onclick="previusQuestion()">Anterior</button>
-                  <button type="button" onclick="nextQuestion()">Próximo</button>
-                </div>
-            </div>
-
-            <!-- Comentários adicionais -->
-            <div class="question" data-question="20" style="display: none;">
-              <h1>Deixe sua opnião</h1>
-                <label for="q28">Quer deixar mais um comentário?</label>
-                <textarea type="" name="q28" id="q28" placeholder="Digite sua mensagem"></textarea>
-                <div>
-                  <button type="button" onclick="previusQuestion()">Anterior</button>
-                  <button type="submit" onclick="sendData()">Enviar</button>
-                </div>
-            </div>
-
-            <div class="question" data-question="21" style="display: none;">
                 <p>Obrigado por responder!</p>
             </div>
         </form>

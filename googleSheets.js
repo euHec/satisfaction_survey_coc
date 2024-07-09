@@ -7,10 +7,8 @@ form.addEventListener('submit', async e => {
 
   try {
     const response = await fetch(scriptURL, { method: 'POST', body: formData })
-    console.log('deu bom');
     console.log(await response.json());
   } catch (error) {
-    console.log('deu ruim');
     console.log('error: ', error)
   }
 });

@@ -58,7 +58,3 @@ function showOrhide(event) {
     question.style.display = 'none';
   }
 }
-
-function sendData(formData) {
-
-}
