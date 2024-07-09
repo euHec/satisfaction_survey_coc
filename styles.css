@@ -16,9 +16,20 @@ body {
   margin: 0;
 }
 
+footer {
+  display: block;
+  position: fixed;
+  bottom: 10px;
+  text-align: center;
+  font-size: 0.9em;
+  color: #3c3c3c;
+  opacity: 20%;
+}
+
 .container-logo {
-  height: 15%;
+  height: 20%;
   display: flex;
+  position: sticky;
   align-items: center;
   justify-content: center;
   box-sizing: border-box;
@@ -51,9 +62,9 @@ body {
 }
 
 .label-checkbox {
-  font-size: 12px;
-  margin-top: 5px;
-  margin-bottom: 5px;
+  font-size: 15px;
+  margin-top: 2px;
+  margin-bottom: 2px;
   color: #00963c;
 }
 
@@ -64,7 +75,7 @@ body {
 }
 
 .column {
-  padding: 5px;
+  padding: 10px;
   display: inline-block;
   box-sizing: border-box;
   width: 90%;
@@ -81,9 +92,9 @@ span {
 }
 
 label {
-  font-size: 20px;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  font-size: 15px;
+  margin-top: 5px;
+  margin-bottom: 5px;
   color: #00963c;
 }
 
@@ -108,7 +119,7 @@ textarea {
 }
 
 button {
-  padding: 10px 20px;
+  padding: 15px 30px;
   border: none;
   background-color: #78d200;
   color: white;
