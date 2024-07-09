@@ -12,8 +12,22 @@
     </div>
     <div class="container">
         <form name="submit-to-google-sheet" id="form">
+            <!-- Início -->
+            <div class="question active" data-question="0">
+              <h1>Pesquisa de satisfação</h1>
+              <p>Prezado(a) Pai/Mãe/Responsável,</p>
+              <p>Agradecemos sua participação na nossa pesquisa de satisfação. Seu feedback é extremamente importante para que possamos melhorar nossos serviços e atender melhor às necessidades dos nossos alunos e suas famílias.</p>
+              <p>Por favor, reserve alguns minutos para responder a esta pesquisa. Suas respostas são confidenciais e serão usadas apenas para fins de melhoria da escola.</p> 
+              <p>Atenciosamente,</p>
+              <p>Colégio COC - Feira de Santana</p>
+
+              <div style="padding: 5px;">
+                <button type="button" onclick="nextQuestion()">Próximo</button>
+              </div>
+          </div>
+
             <!-- Identificação -->
-            <div class="question active" data-question="1">
+            <div class="question" data-question="1">
                 <h1>Identificação <span>(Opcional)</span></h1>
                 <h2 style="padding-top: 5px; padding-bottom: 5px;">Gostaria de se identificar?</h2>
                 <label for="q1">Nome:</label>
@@ -23,6 +37,7 @@
                 <label for="q3">E-mail</label>
                 <input type="email" id="q3" name="q3">
                 <div>
+                  <button type="button" onclick="previusQuestion()">Anterior</button>
                   <button type="button" onclick="nextQuestion()">Próximo</button>
                 </div>
             </div>

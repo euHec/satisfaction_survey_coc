@@ -1,4 +1,4 @@
-let currentQuestion = 1;
+let currentQuestion = 0;
 
 function nextQuestion() {
   const current = document.querySelector(`.question[data-question="${currentQuestion}"]`);
