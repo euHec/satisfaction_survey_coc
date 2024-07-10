@@ -24,7 +24,7 @@ function nextQuestion() {
   }
 }
 
-function previusQuestion() {
+function previousQuestion() {
   const current = document.querySelector(`.question[data-question="${currentQuestion}"]`);
   const previus = document.querySelector(`.question[data-question="${currentQuestion - 1}"]`);
 
