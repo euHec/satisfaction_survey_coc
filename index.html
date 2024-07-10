@@ -28,7 +28,7 @@
             </div>
 
               <!-- Identificação -->
-              <div class="question" data-question="1">
+              <div class="question" data-question="1" style="display: none;">
                   <h1>Identificação <span>(Opcional)</span></h1>
                   <h2 style="padding-top: 5px; padding-bottom: 5px;">Gostaria de se identificar?</h2>
                   <label for="q1">Nome:</label>
@@ -36,7 +36,7 @@
                   <label for="q2">Telefone:</label>
                   <input type="tel" id="q2" name="q2">
                   <label for="q3">E-mail</label>
-                  <input type="email" id="q3" name="q3">
+                  <input type="email" id="q3" name="q3" autocomplete="off">
                   <div>
                     <button type="button" onclick="previousQuestion()">Anterior</button>
                     <button type="button" onclick="nextQuestion()">Próximo</button>

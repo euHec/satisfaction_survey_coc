@@ -1,4 +1,4 @@
-const scriptURL = "https://script.google.com/macros/s/AKfycbxCJ5RbbzpOJ8DqCmDhuMUEtmcFdxq8ksi18-iPJW5Xwr7QcFj64Xq9Qno_nhOL0d95MA/exec";
+const scriptURL = "https://script.google.com/macros/s/AKfycbyuJgYeajDsy-xZAFxa44RtzKbFaZUZqLzOc3Y__glmXR_8SCITPybRMHuz3P39-2mOnQ/exec";
 const form = document.forms['submit-to-google-sheet'];
 
 form.addEventListener('submit', async e => {
@@ -28,6 +28,7 @@ form.addEventListener('submit', async e => {
     }
   });
 
+  console.log(formData);
   try {
     const response = await fetch(scriptURL, { method: 'POST', body: formData })
     console.log(await response.json());
@@ -35,3 +36,4 @@ form.addEventListener('submit', async e => {
     console.log('error: ', error)
   }
 });
+
